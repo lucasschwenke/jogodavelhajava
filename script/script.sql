@@ -1,4 +1,4 @@
-CREATE DATABASE `jogodavelha` /*!40100 DEFAULT CHARACTER SET ucs2 */;
+CREATE DATABASE `jogodavelha`;
 
 use jogodavelha;
 
@@ -6,8 +6,7 @@ CREATE TABLE `jogador` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `apelido` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=ucs2;
-
+);
 
 CREATE TABLE `ranking` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -16,8 +15,7 @@ CREATE TABLE `ranking` (
   PRIMARY KEY (`id`,`id_jogador`),
   KEY `fk_jogador_idx` (`id_jogador`),
   CONSTRAINT `fk_jogador` FOREIGN KEY (`id_jogador`) REFERENCES `jogador` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=ucs2;
-
+);
 
 CREATE TABLE `log` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -28,4 +26,4 @@ CREATE TABLE `log` (
   PRIMARY KEY (`id`),
   KEY `fk_jogadorr_idx` (`id_jogador`),
   CONSTRAINT `fk_jogadorr` FOREIGN KEY (`id_jogador`) REFERENCES `jogador` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=320 DEFAULT CHARSET=ucs2;
+);

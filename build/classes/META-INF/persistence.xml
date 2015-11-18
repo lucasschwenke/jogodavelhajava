@@ -7,7 +7,6 @@
     <class>br.com.jogodavelha.entity.Log</class>
     <class>br.com.jogodavelha.entity.Log_1</class>
     <class>br.com.jogodavelha.entity.Jogador_1</class>
-    <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jogodavelha?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
